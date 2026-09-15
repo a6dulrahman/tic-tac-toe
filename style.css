@@ -1,0 +1,42 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#tic-tac-toe {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border: 1ch solid white;
+  border-radius: 1ch;
+  flex-shrink: 0;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 3px;
+}
+
+#tic-tac-toe > div {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15ch;
+}
+
+#tic-tac-toe > div:hover {
+  cursor: pointer;
+}
+
+button {
+  margin-right: 10px;
+  width: 8ch;
+  height: 4ch;
+  border: 0px;
+  border-radius: 1ch;
+  box-shadow: 5px 7px gray;
+}
